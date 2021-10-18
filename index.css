@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  margin: 0;
+}
+/**************************
+Header Section
+***************************/
+
+.header {
+  background: rgba(111, 66, 193, 0.1);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 1rem 0;
+}
+
+.header-wrapper {
+  display: flex;
+  width: 85vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav > ul {
+  display: flex;
+  list-style: none;
+  width: 30vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/**************************
+Hero Section
+***************************/
+.hero {
+  background: rgba(111, 66, 193, 0.1);
+  padding: 10rem 0;
+  border-radius: 0 0 50% 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  display: flex;
+  width: 85vw;
+}
+.hero-img {
+  overflow: hidden;
+  margin-top: 2.5rem;
+}
+.hero-img-wrapper {
+  width: 25rem;
+  position: absolute;
+}
+.hero-sub-content {
+  max-width: 30rem;
+  line-height: 2rem;
+}
+
+.hero-heading {
+  font-weight: 900;
+  color: #6f42c1;
+  font-size: 40px;
+  margin: 0;
+}
+
+.hero-content:first-child {
+  margin: 0;
+  color: #6f42c1;
+  font-weight: bold;
+}
+
+.prevent-wrapper {
+  display: flex;
+  background: rgba(111, 66, 193, 0.1);
+  padding: 10rem 0;
+}
+
+/* .prevent-wrapper > aside {
+  width: 50vw;
+} */
+.prevent-container {
+  display: flex;
+  width: 60vw;
+  justify-content: space-around;
+  gap: 5;
+}
+
+.prevent-container > div {
+  width: 40%;
+}
+.prevent-aside-container {
+  width: 40vw;
+}
+.prevent-image {
+  background: rgba(111, 66, 193, 0.4);
+  padding: 5rem 0;
+}
+
+.prevent-content {
+  background: white;
+  padding: 10rem 5rem;
+}
+.spacing {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 608px) {
+  .hero-img-wrapper {
+    left: 5rem;
+    bottom: 0;
+  }
+  .hero {
+    padding-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 443px) {
+  .hero-img-wrapper {
+    display: none;
+  }
+}
